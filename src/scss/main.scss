@@ -1,3 +1,7 @@
 @import "generic/normalize";
 @import "settings/colors";
 @import "settings/fonts";
+
+body {
+  font-family: $font-base;
+}

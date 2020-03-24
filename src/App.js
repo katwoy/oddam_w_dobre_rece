@@ -1,11 +1,9 @@
 import React from 'react';
-import './App.scss';
+import Home from './components/Home/Home';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      Hello World
-    </div>
+    <Home />
   );
 }
 
