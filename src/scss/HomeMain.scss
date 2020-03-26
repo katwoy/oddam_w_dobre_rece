@@ -4,6 +4,8 @@
 .main {
   display: flex;
   justify-content: space-between;
+  height: 600px;
+  position: relative;
 }
 
 .main__img {
@@ -13,30 +15,48 @@
 
 .main__img img {
   position: absolute;
-  top: -100px;
-  left: -320px;
+  top: -130px;
+  left: -400px;
   z-index: -1;
   display: block;
-  width: 100%;
+  width: 118%;
 }
 
 .main__content {
-  margin-right: 140px;
+  position: absolute;
+  right: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
 .main__title {
-  font-size: 38px;
+  font-size: 36px;
   text-align: center;
   font-weight: 400;
+  color: $color-darkgray;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .main__title::after {
   content: "";
+  position: absolute;
   background-image: url(../assets/Decoration.svg);
   display: block;
   width: 250px;
   height: 30px;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
 }
 
 .main__button {
@@ -46,7 +66,9 @@
   text-align: center;
   font-weight: 300;
   font-size: 36px;
+  color: $color-darkgray;
   width: 300px;
   height: 120px;
   border: 0.75px solid $color-darkgray;
+  cursor: pointer;
 }
