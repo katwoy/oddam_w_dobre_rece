@@ -1,0 +1,39 @@
+@import "settings/colors";
+@import "settings/fonts";
+
+.three-columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color-yellow;
+  padding-top: 30px;
+  padding-bottom: 57px;
+}
+
+.column {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column__title {
+  font-size: 90px;
+  font-weight: 300;
+  color: $color-dark;
+  margin-bottom: 25px;
+}
+
+.column__subtitle {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $color-darkgray;
+  margin-bottom: 20px;
+}
+
+.column__text {
+  font-weight: 300;
+  color: $color-darkgray;
+  text-align: center;
+}
