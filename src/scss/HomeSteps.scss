@@ -1,0 +1,89 @@
+@import "settings/colors";
+@import "settings/fonts";
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.steps__title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 400;
+  color: $color-darkgray;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.steps__title::after {
+  content: "";
+  position: absolute;
+  background-image: url(../assets/Decoration.svg);
+  display: block;
+  width: 250px;
+  height: 30px;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.steps__wrapper {
+  background-color: $color-light;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 50px 0;
+}
+
+.steps__step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 130px;
+  margin: 0 60px;
+}
+
+.steps__subtitle {
+  color: $color-darkgray;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+}
+
+.steps__subtitle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-bottom: 1px solid $color-darkgray;
+  width: 70px;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+}
+
+.steps__text {
+  color: $color-darkgray;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.steps__button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 36px;
+  color: $color-darkgray;
+  width: 300px;
+  height: 120px;
+  border: 0.75px solid $color-darkgray;
+  cursor: pointer;
+}
