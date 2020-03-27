@@ -10,7 +10,7 @@ const Home = () => {
       <HomeHeader />
       <HomeMain />
       <HomeThreeColumns />
-      <HomeSteps />
+      <HomeSteps id="section1" />
     </>
   )
 }

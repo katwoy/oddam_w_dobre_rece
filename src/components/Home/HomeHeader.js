@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {Link as ScrollLink} from "react-scroll";
 import '../../scss/HomeHeader.scss';
 
 const HomeHeader = () => {
@@ -12,10 +13,46 @@ const HomeHeader = () => {
       <nav className="header__nav">
         <ul className="header__list">
           <li className="header__li"><a href="/">Start</a></li>
-          <li className="header__li"><a href="/">O co chodzi?</a></li>
-          <li className="header__li"><a href="/">O nas</a></li>
-          <li className="header__li"><a href="/">Fundacje i organizacje</a></li>
-          <li className="header__li"><a href="/">Kontakt</a></li>
+          <li className="header__li">
+            <ScrollLink 
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}>O co chodzi?
+            </ScrollLink>
+          </li>
+          <li className="header__li">
+            <ScrollLink 
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}>O nas
+            </ScrollLink>
+          </li>
+          <li className="header__li">
+            <ScrollLink 
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}>Fundacje i organizacje
+            </ScrollLink>
+          </li>
+          <li className="header__li">
+            <ScrollLink 
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}>Kontakt
+            </ScrollLink>
+          </li>
         </ul>
       </nav>
     </header>

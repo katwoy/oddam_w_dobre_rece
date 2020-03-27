@@ -6,9 +6,9 @@ import bag from '../../assets/Icon-2.svg';
 import magnifier from '../../assets/Icon-3.svg';
 import arrows from '../../assets/Icon-4.svg';
 
-const HomeSteps = () => {
+const HomeSteps = ({id}) => {
   return (
-    <section className="steps">
+    <section className="steps" id={id}>
       <h2 className="steps__title">Wystarczą 4 proste kroki</h2>
       <div className="steps__wrapper">
         <div className="steps__step">
