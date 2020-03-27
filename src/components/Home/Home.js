@@ -4,6 +4,7 @@ import HomeMain from './HomeMain';
 import HomeThreeColumns from './HomeThreeColumns';
 import HomeSteps from './HomeSteps';
 import HomeAboutUs from './HomeAboutUs';
+import HomeWhoWeHelp from './HomeWhoWeHelp';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <HomeThreeColumns />
       <HomeSteps id="steps" />
       <HomeAboutUs id="about" />
+      <HomeWhoWeHelp id="whowehelp" />
     </>
   )
 }
