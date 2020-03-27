@@ -3,6 +3,7 @@ import HomeHeader from './HomeHeader';
 import HomeMain from './HomeMain';
 import HomeThreeColumns from './HomeThreeColumns';
 import HomeSteps from './HomeSteps';
+import HomeAboutUs from './HomeAboutUs';
 
 const Home = () => {
   return (
@@ -10,7 +11,8 @@ const Home = () => {
       <HomeHeader />
       <HomeMain />
       <HomeThreeColumns />
-      <HomeSteps id="section1" />
+      <HomeSteps id="steps" />
+      <HomeAboutUs id="about" />
     </>
   )
 }
