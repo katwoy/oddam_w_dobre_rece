@@ -36,7 +36,7 @@ const HomeHeader = () => {
           <li className="header__li">
             <ScrollLink 
                 activeClass="active"
-                to="section1"
+                to="whowehelp"
                 spy={true}
                 smooth={true}
                 offset={0}
@@ -46,7 +46,7 @@ const HomeHeader = () => {
           <li className="header__li">
             <ScrollLink 
                 activeClass="active"
-                to="section1"
+                to="contact"
                 spy={true}
                 smooth={true}
                 offset={0}
