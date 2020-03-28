@@ -5,11 +5,12 @@ import shirt from '../../assets/Icon-1.svg';
 import bag from '../../assets/Icon-2.svg';
 import magnifier from '../../assets/Icon-3.svg';
 import arrows from '../../assets/Icon-4.svg';
+import HomeTitle from './HomeTitle';
 
 const HomeSteps = ({id}) => {
   return (
     <section className="steps" id={id}>
-      <h2 className="steps__title">Wystarczą 4 proste kroki</h2>
+      <HomeTitle title={"Wystarczą 4 proste kroki"} />
       <div className="steps__wrapper">
         <div className="steps__step">
           <img src={shirt} alt="shirt" className="steps__image"/>
