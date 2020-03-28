@@ -19,7 +19,7 @@ const HomeHeader = () => {
                 to="steps"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-45}
                 duration={500}>O co chodzi?
             </ScrollLink>
           </li>
