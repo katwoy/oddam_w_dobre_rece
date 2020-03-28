@@ -36,16 +36,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
   margin-bottom: 50px;
   padding: 50px 0;
 }
 
 .steps__step {
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 130px;
+  width: 150px;
   margin: 0 60px;
 }
 
@@ -78,6 +80,7 @@
   border: none;
   background-color: transparent;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   font-weight: 300;
   font-size: 36px;
@@ -86,4 +89,7 @@
   height: 120px;
   border: 0.75px solid $color-darkgray;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
