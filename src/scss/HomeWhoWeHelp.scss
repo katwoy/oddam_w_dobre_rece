@@ -35,9 +35,45 @@
   border: 0.75px solid $color-darkgray;
 }
 
+.whowehelp__button.active {
+  border: 0.75px solid $color-darkgray;
+}
+
+.whowehelp__button + .whowehelp__button {
+  margin-left: 80px;
+}
+
 .whowehelp__text {
   width: 640px;
   text-align: center;
   font-size: 22px;
+  line-height: 1.5em;
   color: $color-darkgray;
+  margin-bottom: 50px;
+}
+
+.whowehelp__table {
+  width: 1350px;
+  border-collapse: collapse;
+}
+
+.whowehelp__table td {
+  border-bottom: 1px solid $color-darkgray;
+  font-size: 18px;
+  font-weight: 300;
+  color: $color-darkgray;
+  height: 100px;
+}
+
+.whowehelp__table tr:last-child td {
+  border-bottom: none;
+}
+
+.whowehelp__table td span {
+  font-size: 26px;
+}
+
+.whowehelp__table tr td:last-child {
+  text-align: end;
+  padding-right: 20px;
 }

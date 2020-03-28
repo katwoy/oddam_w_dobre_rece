@@ -39,7 +39,7 @@ const HomeHeader = () => {
                 to="whowehelp"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-75}
                 duration={500}>Fundacje i organizacje
             </ScrollLink>
           </li>
