@@ -44,11 +44,12 @@
   margin-bottom: 50px;
 }
 
-.about__wrapper img {
-  align-self: flex-end;
+.about__img {
+  width: 50%;
   overflow: hidden;
 }
 
-.about__img {
-  width: 50%;
+
+.about__wrapper img {
+  align-self: flex-end;
 }
