@@ -1,0 +1,10 @@
+@import "settings/colors";
+@import "settings/fonts";
+
+.contact {
+  height: 800px;
+  background: linear-gradient(rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%), url(../assets/Background-Contact-Form.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
