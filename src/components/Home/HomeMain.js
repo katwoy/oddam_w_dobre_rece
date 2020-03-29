@@ -10,7 +10,7 @@ const HomeMain = () => {
         <img src={hero} alt="items packed in a box"/>
       </div>
       <div className="main__content">
-        <div className="main__title">Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</div>
+        <h1 className="main__title">Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</h1>
         <div className="main__buttons">
           <Link to="/logowanie" className="main__button">Oddaj <br/> rzeczy</Link>
           <Link to="/logowanie" className="main__button">Zorganizuj <br/> zbiórkę</Link>

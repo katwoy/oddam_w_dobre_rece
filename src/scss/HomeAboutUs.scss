@@ -16,28 +16,6 @@
   height: 935px;
 }
 
-.about__title {
-  font-size: 36px;
-  text-align: center;
-  font-weight: 400;
-  color: $color-darkgray;
-  margin-top: 50px;
-  margin-bottom: 80px;
-  position: relative;
-}
-
-.about__title::after {
-  content: "";
-  position: absolute;
-  background-image: url(../assets/Decoration.svg);
-  display: block;
-  width: 250px;
-  height: 30px;
-  top: 130%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .about__text {
   font-size: 30px;
   line-height: 2em;
