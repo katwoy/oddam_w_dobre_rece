@@ -6,6 +6,7 @@ import HomeSteps from './HomeSteps';
 import HomeAboutUs from './HomeAboutUs';
 import HomeWhoWeHelp from './HomeWhoWeHelp';
 import HomeContactForm from './HomeContactForm';
+import HomeFooter from './HomeFooter';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <HomeAboutUs id="about" />
       <HomeWhoWeHelp id="whowehelp" />
       <HomeContactForm id="contact" />
+      <HomeFooter />
     </>
   )
 }
