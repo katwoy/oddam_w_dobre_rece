@@ -1,0 +1,38 @@
+@import "settings/colors";
+@import "settings/fonts";
+
+.pagination {
+
+  .pagination__list {
+    display: flex;
+  
+    li {
+      list-style: none;
+
+  
+      a {
+        text-decoration: none;
+        color: $color-darkgray;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+
+        &:hover {
+          border: 0.75px solid $color-darkgray;
+        }
+
+        &.active {
+          border: 0.75px solid $color-darkgray;
+        }
+
+      }
+
+    }
+
+  }
+
+}
