@@ -1,0 +1,66 @@
+@import "settings/colors";
+@import "settings/fonts";
+
+.login {
+  margin-top: 120px;
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .login__form {
+    width: 385px;
+    height: 235px;
+    margin-bottom: 50px;
+    background-color: $color-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    label {
+      display: flex;
+      flex-direction: column;
+  
+      input {
+        border: none;
+        border-bottom: 1px solid $color-lightgray;
+        background-color: transparent;
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+  
+    }
+  
+    label:first-child input {
+      margin-bottom: 40px;
+    }
+  
+  }
+
+  .login__buttons {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .login__button {
+      text-decoration: none;
+      color: $color-darkgray;
+      width: 120px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover,
+      &.active {
+        border: 0.75px solid $color-darkgray;
+      }
+
+    }
+
+  } 
+
+}
