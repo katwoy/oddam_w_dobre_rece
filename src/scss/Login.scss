@@ -28,13 +28,20 @@
         border-bottom: 1px solid $color-lightgray;
         background-color: transparent;
         font-size: 18px;
-        padding-bottom: 10px;
+        padding-top: 10px;
+
       }
   
     }
-  
-    label:first-child input {
-      margin-bottom: 40px;
+
+    label:nth-child(3) {
+      margin-top: 30px;
+    }
+
+    .login__error {
+      color: red;
+      font-size: 12px;
+      width: 241px;
     }
   
   }
