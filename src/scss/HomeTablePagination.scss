@@ -10,7 +10,7 @@
       list-style: none;
 
   
-      a {
+      span {
         text-decoration: none;
         color: $color-darkgray;
         font-size: 18px;
@@ -21,10 +21,7 @@
         height: 50px;
         cursor: pointer;
 
-        &:hover {
-          border: 0.75px solid $color-darkgray;
-        }
-
+        &:hover,
         &.active {
           border: 0.75px solid $color-darkgray;
         }

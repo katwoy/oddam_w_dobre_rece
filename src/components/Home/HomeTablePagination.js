@@ -9,13 +9,13 @@ const HomeTablePagination = ({ recordsPerPage, totalRecords, paginate }) => {
   }
 
   return (
-    <nav className="pagination">
+    <nav className="pagination" style={{visibility: pageNumbers.length>1 ? "visible" : "hidden"}}>
       <ul className="pagination__list">
         {pageNumbers.map(number => (
           <li key={number}>
-            <a onClick={() => paginate(number)} href='!#'>
+            <span onClick={() => paginate(number)} href='!#'>
               {number}
-            </a>
+            </span>
           </li>
         ))}
       </ul>

@@ -33,24 +33,21 @@ const HomeWhoWeHelp = ({id}) => {
   ]
 
   const [type, setType] = useState("foundations");
-  let records = foundationList;
+  const [records, setRecords] = useState(foundationList)
 
   const handleFoundations = () => {
     setType("foundations");
-    records = [];
-    records = foundationList;
+    setRecords(foundationList);
   }
 
   const handleNgos = () => {
     setType("ngos");
-    records = [];
-    records = ngoList;
+    setRecords(ngoList)
   }
 
   const handleLocal = () => {
     setType("local");
-    records = [];
-    records = localList;
+    setRecords(localList)
   }
 
   const [currentPage, setCurrentPage] = useState(1);
