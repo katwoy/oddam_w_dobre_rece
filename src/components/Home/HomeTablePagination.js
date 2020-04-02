@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../scss/HomeTablePagination.scss';
 
-const HomeTablePagination = ({ recordsPerPage, totalRecords, paginate }) => {
+const HomeTablePagination = ({recordsPerPage, totalRecords, paginate, activeNumber}) => {
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalRecords / recordsPerPage); i++) {
@@ -13,7 +13,7 @@ const HomeTablePagination = ({ recordsPerPage, totalRecords, paginate }) => {
       <ul className="pagination__list">
         {pageNumbers.map(number => (
           <li key={number}>
-            <span onClick={() => paginate(number)} href='!#'>
+            <span onClick={() => paginate(number)} href='!#' style={{border: activeNumber===number && "0.75px solid #3c3c3c"}}>
               {number}
             </span>
           </li>

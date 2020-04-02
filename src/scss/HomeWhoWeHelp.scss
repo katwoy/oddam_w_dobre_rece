@@ -3,7 +3,6 @@
 
 .whowehelp {
   margin-top: 80px;
-  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +27,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:focus {
+    outline: 0.75px dotted #3c3c3c;
+  }
+
 }
 
 .whowehelp__button:hover {

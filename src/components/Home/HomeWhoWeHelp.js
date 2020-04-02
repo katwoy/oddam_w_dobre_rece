@@ -38,16 +38,19 @@ const HomeWhoWeHelp = ({id}) => {
   const handleFoundations = () => {
     setType("foundations");
     setRecords(foundationList);
+    setCurrentPage(1);
   }
 
   const handleNgos = () => {
     setType("ngos");
-    setRecords(ngoList)
+    setRecords(ngoList);
+    setCurrentPage(1);
   }
 
   const handleLocal = () => {
     setType("local");
-    setRecords(localList)
+    setRecords(localList);
+    setCurrentPage(1);
   }
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -63,9 +66,9 @@ const HomeWhoWeHelp = ({id}) => {
     <section className="whowehelp" id={id}>
       <HomeTitle title={"Komu pomagamy?"}/>
       <div className="whowehelp__buttons">
-        <button className="whowehelp__button" onClick={handleFoundations}>Fundacjom</button>
-        <button className="whowehelp__button" onClick={handleNgos}>Organizacjom <br/> pozarządowym</button>
-        <button className="whowehelp__button" onClick={handleLocal}>Lokalnym <br/> zbiórkom</button>
+        <button className="whowehelp__button" onClick={handleFoundations} style={{border: type==="foundations" && "0.75px solid #3c3c3c"}}>Fundacjom</button>
+        <button className="whowehelp__button" onClick={handleNgos} style={{border: type==="ngos" && "0.75px solid #3c3c3c"}}>Organizacjom <br/> pozarządowym</button>
+        <button className="whowehelp__button" onClick={handleLocal} style={{border: type==="local" && "0.75px solid #3c3c3c"}}>Lokalnym <br/> zbiórkom</button>
       </div>
       {type==="foundations" && <p className="whowehelp__text">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>}
       {type==="ngos" && <p className="whowehelp__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>}
@@ -79,6 +82,7 @@ const HomeWhoWeHelp = ({id}) => {
         recordsPerPage={recordsPerPage}
         totalRecords={records.length}
         paginate={paginate} 
+        activeNumber={currentPage}
       />
     </section>
   )
