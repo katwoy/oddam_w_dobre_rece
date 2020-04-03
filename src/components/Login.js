@@ -32,7 +32,8 @@ const Login = () => {
     }
   }, [password])
 
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
     if (!passwordValidation) {
       setPasswordError(true)
     } else {
@@ -45,24 +46,25 @@ const Login = () => {
     }
   }
 
-
   return (
     <section className="login">
       <HomeTitle title={"Zaloguj się"} />
       <form className="login__form">
-        <label>Email
-          <input type="email" name="email" value={email} onChange={e => setEmail(e.currentTarget.value)} style={{borderBottomColor: emailError && "red"}}/>
-        </label>
-        <div className="login__error" style={{visibility: emailError ? "visible" : "hidden"}}>Podany email jest nieprawidłowy!</div>
-        <label>Hasło
-          <input type="password" name="password" value={password} onChange={e => setPassword(e.currentTarget.value)} style={{borderBottomColor: passwordError && "red"}}/>
-        </label>
-        <div className="login__error" style={{visibility: passwordError ? "visible" : "hidden"}}>Podane hasło jest za krótkie!</div>
+        <div className="login__fields">
+          <label>Email
+            <input type="email" name="email" value={email} onChange={e => setEmail(e.currentTarget.value)} style={{borderBottomColor: emailError && "red"}}/>
+          </label>
+          <div className="login__error" style={{visibility: emailError ? "visible" : "hidden"}}>Podany email jest nieprawidłowy!</div>
+          <label>Hasło
+            <input type="password" name="password" value={password} onChange={e => setPassword(e.currentTarget.value)} style={{borderBottomColor: passwordError && "red"}}/>
+          </label>
+          <div className="login__error" style={{visibility: passwordError ? "visible" : "hidden"}}>Podane hasło jest za krótkie!</div>
+        </div>
+        <div className="login__buttons">
+          <Link to="/rejestracja" className="login__button">Załóż konto</Link>
+          <button type="submit" className="login__button active" onClick={handleClick}>Zaloguj się</button>
+        </div>
       </form>
-      <div className="login__buttons">
-      <Link to="/rejestracja" className="login__button">Załóż konto</Link>
-      <Link to="/logowanie" className="login__button active" onClick={handleClick}>Zaloguj się</Link>
-      </div>
     </section>
   )
 }
