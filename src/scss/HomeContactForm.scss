@@ -27,7 +27,7 @@
 }
 
 .contact__fields {
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -54,7 +54,8 @@
   background-color: transparent;
   font-size: 18px;
   margin-top: 20px;
-  padding-bottom: 10px;
+  line-height: 28px;
+  // padding-bottom: 10px;
 }
 
 .contact__fields input::placeholder,
@@ -65,7 +66,7 @@
 
 .contact__fields textarea {
   width: 528px;
-  height: 100px;
+  height: 120px;
   resize: none;
 }
 
@@ -77,4 +78,21 @@
   border: 0.75px solid $color-darkgray;
   cursor: pointer;
   align-self: flex-end;
+}
+
+.contact__error {
+  color: red;
+  font-size: 12px;
+  width: 241px;
+}
+
+.contact__error.message {
+  width: 350px;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
 }
