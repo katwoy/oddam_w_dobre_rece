@@ -20,7 +20,7 @@ const HomeContactForm = ({id}) => {
   }
 
   useEffect(() => {
-    if (validateName(name)) {
+    if (validateName(name) && name.length > 0) {
       setNameValidation(true)
     } else {
       setNameValidation(false)
@@ -67,14 +67,14 @@ const HomeContactForm = ({id}) => {
     }
     fetch('https://fer-api.coderslab.pl/v1/portfolio/contact',{
         method: "POST",
-        body: JSON.stringify({name: name, email: email, message: message}),
         headers: {
-          'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
+        body: JSON.stringify({name: name, email: email, message: message}),
       })
-      .then((response) => (response.json()))
-      .then((response) => {
+      .then(response => response.json())
+      .then(response => {
+        console.log(response);
         if (response.status === 'success') {
           setName("");
           setEmail("");
