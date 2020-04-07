@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Login from './components/Login';
 import Register from './components/Register';
 import Logout from './components/Logout';
+import Form from './components/Form';
 import {
   HashRouter,
   Route,
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/logowanie' component={Login} />
           <Route path='/rejestracja' component={Register} />
           <Route path='/wylogowano' component={Logout} />
+          <Route path='/oddaj-rzeczy' component={Form} />
         </Switch>
         <Footer />
       </HashRouter>
