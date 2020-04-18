@@ -2,6 +2,7 @@ import React from 'react';
 import FormHero from './FormHero';
 import FormInfo from './FormInfo';
 import FormSteps from './FormSteps';
+import HomeContactForm from '../Home/HomeContactForm';
 
 const Form = () => {
   return (
@@ -9,6 +10,7 @@ const Form = () => {
       <FormHero />
       <FormInfo />
       <FormSteps />
+      <HomeContactForm />
     </main>
   )
 }
