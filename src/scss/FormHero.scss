@@ -5,7 +5,7 @@
   display: flex;
   height: 700px;
 
-  .form__img {
+  .hero__img {
     position: relative;
     width: 50%;
 
@@ -17,14 +17,14 @@
 
   }
 
-  .form__description {
+  .hero__description {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .form__title {
+    .hero__title {
       font-size: 36px;
       line-height: 1.5em;
       text-align: center;
@@ -50,14 +50,14 @@
 
     }
 
-    .form__subtitle {
+    .hero__subtitle {
       font-size: 38px;
       font-weight: 300;
       text-align: center;
       margin-bottom: 60px;
     }
 
-    .form__steps {
+    .hero__steps {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -93,22 +93,6 @@
 
     }
 
-  }
-
-}
-
-.form__info {
-  background-color: $color-yellow;
-  padding: 50px 150px;
-
-  strong {
-    font-size: 36px;
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 22px;
   }
 
 }

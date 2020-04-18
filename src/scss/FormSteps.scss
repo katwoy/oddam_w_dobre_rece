@@ -1,0 +1,15 @@
+@import "settings/colors";
+@import "settings/fonts";
+
+.form {
+  background-image: url(../assets/Background-Form.jpg);
+
+  .form__subtitle {
+    font-size: 24px;
+  }
+
+  .form__title {
+    font-size: 36px;
+  }
+
+}
