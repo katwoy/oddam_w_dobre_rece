@@ -4,7 +4,7 @@ import formHero from '../../assets/Form-Hero-Image.jpg';
 
 const FormHero = () => {
   return (
-    <div className="form__hero">
+    <section className="form__hero">
       <div className="hero__img">
         <img src={formHero} alt="green sweater"/>
       </div> 
@@ -18,7 +18,7 @@ const FormHero = () => {
           <div><span>4</span><br/>Zamów kuriera</div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

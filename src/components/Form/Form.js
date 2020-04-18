@@ -5,11 +5,11 @@ import FormSteps from './FormSteps';
 
 const Form = () => {
   return (
-    <section className="form__container">
+    <main className="form__container">
       <FormHero />
       <FormInfo />
       <FormSteps />
-    </section>
+    </main>
   )
 }
 
