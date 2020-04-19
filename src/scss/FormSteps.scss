@@ -16,7 +16,7 @@
 
   .form__title {
     font-size: 36px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .form__fields {
@@ -52,20 +52,29 @@
     .select {
       position: relative;
       display: flex;
-      width: 350px;
+      width: 300px;
       height: 50px;
       line-height: 3;
       background: transparent;
       overflow: hidden;
       border: 0.75px solid $color-darkgray;
 
+      &::after {
+        content: 'v';
+        font-weight: bold;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 15px;
+        cursor: pointer;
+        pointer-events: none;
+      }
+
       select {
         appearance: none;
         outline: 0;
         box-shadow: none;
         border: 0 !important;
-        background: #2c3e50;
-        background-image: none;
         flex: 1;
         padding: 0 .5em;
         color: #333;
@@ -74,23 +83,6 @@
         font-size: 20px;
       }
 
-    }
-
-    .select::after {
-      content: '\25BC';
-      color: #fff;
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 0 15px;
-      background: #e98a8a;
-      cursor: pointer;
-      pointer-events: none;
-      transition: .25s all ease;
-    }
-
-    .select:hover::after {
-      color: #333;
     }
 
   }

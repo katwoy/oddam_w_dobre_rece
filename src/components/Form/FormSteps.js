@@ -1,8 +1,9 @@
 import React from 'react';
 import '../../scss/FormSteps.scss';
 import FormInfo from './FormInfo';
-import FormStep1 from './FormStep1';
+// import FormStep1 from './FormStep1';
 // import FormStep2 from './FormStep2';
+import FormStep3 from './FormStep3';
 
 const FormSteps = () => {
 
@@ -10,7 +11,7 @@ const FormSteps = () => {
     <>
       <FormInfo />
       <section className="form__steps">
-        <FormStep1 />
+        <FormStep3 />
       </section>
     </>
   )
