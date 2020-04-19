@@ -16,23 +16,19 @@
 
   .form__title {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
 
   .form__fields {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
 
     label {
       font-size: 24px;
       font-weight: 300;
       height: 40px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      margin: 20px 0;
+      margin: 15px 0;
 
       input {
         appearance: none;
@@ -50,15 +46,20 @@
 
   }
 
-  .form__button {
-    font-size: 24px;
-    font-weight: 300;
-    width: 180px;
-    height: 80px;
-    background-color: transparent;
-    border: 0.75px solid $color-darkgray;
+  .form__buttons {
     position: absolute;
     bottom: 50px;
+
+    .form__button {
+      font-size: 24px;
+      font-weight: 300;
+      width: 180px;
+      height: 80px;
+      background-color: transparent;
+      border: 0.75px solid $color-darkgray;
+      margin-right: 40px;
+    }
+
   }
 
 }
