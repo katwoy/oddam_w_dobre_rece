@@ -1,6 +1,7 @@
 import React from 'react';
 
 const FormStep1 = () => {
+
   return (
     <>
       <div className="form__subtitle">Krok 1/4</div>

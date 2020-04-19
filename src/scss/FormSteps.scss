@@ -21,6 +21,11 @@
 
   .form__fields {
 
+    .form__text {
+      font-size: 24px;
+      font-weight: 300;
+    }
+
     label {
       font-size: 24px;
       font-weight: 300;
@@ -42,6 +47,50 @@
         }
       }
 
+    }
+
+    .select {
+      position: relative;
+      display: flex;
+      width: 350px;
+      height: 50px;
+      line-height: 3;
+      background: transparent;
+      overflow: hidden;
+      border: 0.75px solid $color-darkgray;
+
+      select {
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: #2c3e50;
+        background-image: none;
+        flex: 1;
+        padding: 0 .5em;
+        color: #333;
+        background: transparent;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+    }
+
+    .select::after {
+      content: '\25BC';
+      color: #fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 15px;
+      background: #e98a8a;
+      cursor: pointer;
+      pointer-events: none;
+      transition: .25s all ease;
+    }
+
+    .select:hover::after {
+      color: #333;
     }
 
   }
