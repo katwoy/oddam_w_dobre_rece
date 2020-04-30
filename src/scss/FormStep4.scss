@@ -1,0 +1,55 @@
+@import "settings/colors";
+@import "settings/fonts";
+
+.form__pickup {
+  display: flex;
+  justify-content: space-between;
+  width: 950px;
+
+  .form__address,
+  .form__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h4 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+
+    label {
+      font-size: 24px;
+      font-weight: 300;
+      width: 392px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      span {
+        display: inline-block;
+        width: 60px;
+      }
+
+      input {
+        width: 256px;
+        height: 40px;
+        background-color: transparent;
+        border: 0.75px solid $color-darkgray;
+      }
+
+      textarea {
+        background-color: transparent;
+        border: 0.75px solid $color-darkgray;
+        resize: none;
+        width: 256px;
+        height: 120px;
+      }
+
+    }
+
+  }
+
+}
