@@ -5,7 +5,8 @@ import FormInfo from './FormInfo';
 // import FormStep2 from './FormStep2';
 // import FormStep3 from './FormStep3';
 // import FormStep4 from './FormStep4';
-import FormSummary from './FormSummary';
+// import FormSummary from './FormSummary';
+import FormThanks from './FormThanks';
 
 const FormSteps = () => {
 
@@ -13,7 +14,7 @@ const FormSteps = () => {
     <>
       <FormInfo />
       <section className="form__steps">
-        <FormSummary />
+        <FormThanks />
       </section>
     </>
   )
