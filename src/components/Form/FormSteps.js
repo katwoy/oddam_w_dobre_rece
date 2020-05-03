@@ -8,12 +8,14 @@ import FormStep4 from './FormStep4';
 import FormSummary from './FormSummary';
 import FormThanks from './FormThanks';
 import FormButtonNext from './FormButtonNext';
+import FormButtonPrev from './FormButtonPrev';
 
 const FormSteps = () => {
 
   const [step, setStep] = useState(1);
 
-  const nextPage = (stepNumber) => setStep(stepNumber)
+  const nextPage = (stepNumber) => setStep(stepNumber);
+  const prevPage = (stepNumber) => setStep(stepNumber);
 
   return (
     <>
@@ -26,7 +28,8 @@ const FormSteps = () => {
         {step===5 && <FormSummary />}
         {step===6 && <FormThanks />}
         <div className="form__buttons">
-          <FormButtonNext nextPage={nextPage} step={step} />
+          {step !== 1 && <FormButtonPrev prevPage={prevPage} step={step} />}
+          {step !== 5 && <FormButtonNext nextPage={nextPage} step={step} />}
         </div>
       </section>
     </>
