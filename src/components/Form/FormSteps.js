@@ -22,7 +22,7 @@ const FormSteps = () => {
     <>
       {step === 1 && <FormInfo info={"Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzieć komu najlepiej je przekazać."} />}
       {step === 2 && <FormInfo info={"Wszystkie rzeczy do oddania zapakuj w 60l worki."} />}
-      {step === 3 && <FormInfo info={"Jeśli wiesz komu chcesz pomóc, możesz wpisać nazwę tej organizacji w wyszukiwarce. Możesz też filtrować organizacje po ich lokalizacji bądź celu ich pomocy."} />}
+      {step === 3 && <FormInfo info={"Jeśli wiesz komu chcesz pomóc, możesz podać nazwę konkretnej organizacji.} />}
       {step === 4 && <FormInfo info={"Podaj adres oraz termin odbioru rzeczy."} />}
       <section className="form__steps">
         {step===1 && <FormStep1 />}
