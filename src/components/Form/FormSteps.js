@@ -9,6 +9,7 @@ import FormSummary from './FormSummary';
 import FormThanks from './FormThanks';
 import FormButtonNext from './FormButtonNext';
 import FormButtonPrev from './FormButtonPrev';
+import FormButtonSubmit from './FormButtonSubmit';
 
 const FormSteps = () => {
 
@@ -28,8 +29,9 @@ const FormSteps = () => {
         {step===5 && <FormSummary />}
         {step===6 && <FormThanks />}
         <div className="form__buttons">
-          {step !== 1 && <FormButtonPrev prevPage={prevPage} step={step} />}
-          {step !== 5 && <FormButtonNext nextPage={nextPage} step={step} />}
+          {step !== 1 && step !== 6 && <FormButtonPrev prevPage={prevPage} step={step} />}
+          {step !== 5 && step!== 6 && <FormButtonNext nextPage={nextPage} step={step} />}
+          {step === 5 && step!== 6 && <FormButtonSubmit nextPage={nextPage} step={step} />}
         </div>
       </section>
     </>
