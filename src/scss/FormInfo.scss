@@ -4,6 +4,10 @@
 .form__info {
   background-color: $color-yellow;
   padding: 50px 150px;
+  height: 200px;
+  display: flex;flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 
   h3 {
     font-size: 36px;
