@@ -45,10 +45,6 @@ const FormStep2 = () => {
           <textarea></textarea>
         </div>
       </form>
-      <div className="form__buttons">
-        <button className="form__button">Wstecz</button>
-        <button className="form__button">Dalej</button>
-      </div>
     </>
   )
 }

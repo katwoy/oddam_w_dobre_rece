@@ -11,7 +11,7 @@ const FormStep1 = () => {
         <div className="form__what">
           <label>
             <input type="checkbox" name="what" value="goodclothes"></input>
-            ubrania, które nadają się do ponownego użycia
+            ubrania w dobrym stanie
           </label>
           <br/>
           <label>
@@ -35,9 +35,6 @@ const FormStep1 = () => {
           </label>
         </div>
       </form>
-      <div className="form__buttons">
-        <button className="form__button">Dalej</button>
-      </div>
     </>
   )
 }
