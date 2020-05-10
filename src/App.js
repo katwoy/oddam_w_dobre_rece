@@ -12,6 +12,8 @@ import {
   Route,
   Switch,
   } from 'react-router-dom';
+import firebase from 'firebase';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 const App = () => {
   return (
