@@ -3,7 +3,7 @@ import './scss/App.scss';
 import Header from './components/Header';
 import Home from './components/Home/Home';
 import Footer from './components/Footer';
-import Login from './components/Login';
+// import Login from './components/Login';
 import Register from './components/Register';
 import Logout from './components/Logout';
 import Form from './components/Form/Form';
@@ -12,8 +12,8 @@ import {
   Route,
   Switch,
   } from 'react-router-dom';
-import firebase from 'firebase';
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+// import firebase from 'firebase';
+// import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/logowanie' component={Login} />
+          {/* <Route path='/logowanie' component={Login} /> */}
           <Route path='/rejestracja' component={Register} />
           <Route path='/wylogowano' component={Logout} />
           <Route path='/oddaj-rzeczy' component={Form} />
