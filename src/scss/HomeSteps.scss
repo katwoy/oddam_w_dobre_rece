@@ -7,66 +7,71 @@
   align-items: center;
   margin-top: 50px;
   margin-bottom: 100px;
-}
 
-.steps__wrapper {
-  background-color: $color-light;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  padding: 50px 0;
-}
+  .steps__wrapper {
+    background-color: $color-light;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 50px 0;
 
-.steps__step {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 150px;
-  margin: 0 60px;
-}
+    .steps__step {
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 150px;
+      margin: 0 60px;
 
-.steps__subtitle {
-  font-size: 18px;
-  text-align: center;
-  padding-top: 10px;
-  position: relative;
-}
+      .steps__subtitle {
+        font-size: 18px;
+        text-align: center;
+        padding-top: 10px;
+        position: relative;
 
-.steps__subtitle::after {
-  content: "";
-  position: absolute;
-  display: block;
-  border-bottom: 1px solid $color-darkgray;
-  width: 70px;
-  left: 50%;
-  bottom: -12px;
-  transform: translateX(-50%);
-}
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+          border-bottom: 1px solid $color-darkgray;
+          width: 70px;
+          left: 50%;
+          bottom: -12px;
+          transform: translateX(-50%);
+        }
 
-.steps__text {
-  text-align: center;
-  margin-top: 30px;
-}
+      }
 
-.steps__button {
-  border: none;
-  background-color: transparent;
-  color: $color-darkgray;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 300;
-  font-size: 36px;
-  width: 300px;
-  height: 120px;
-  border: 0.75px solid $color-darkgray;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+      .steps__text {
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+
+    }
+
+  }
+
+  .steps__button {
+    border: none;
+    background-color: transparent;
+    color: $color-darkgray;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 300;
+    font-size: 36px;
+    width: 300px;
+    height: 120px;
+    border: 0.75px solid $color-darkgray;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
