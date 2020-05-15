@@ -3,32 +3,37 @@
 
 .about {
   display: flex;
+
+  .about__wrapper {
+    background-color: $color-light;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+    height: 935px;
+
+    .about__text {
+      font-size: 30px;
+      line-height: 2em;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+  }
+
+  .about__img {
+    width: 50%;
+    overflow: hidden;
+  }
+
 }
 
-.about__wrapper {
-  background-color: $color-light;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 150px;
-  height: 935px;
-}
-
-.about__text {
-  font-size: 30px;
-  line-height: 2em;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.about__img {
-  width: 50%;
-  overflow: hidden;
-}
 
 
-.about__wrapper img {
-  align-self: flex-end;
-}
+
+
+
+
+
