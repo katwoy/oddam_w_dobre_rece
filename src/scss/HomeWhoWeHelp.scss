@@ -7,74 +7,78 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.whowehelp__buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
+  .whowehelp__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
 
-.whowehelp__button {
-  height: 80px;
-  width: 220px;
-  font-size: 24px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    .whowehelp__button {
+      height: 80px;
+      width: 220px;
+      font-size: 24px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      &:focus {
+        outline: 0.75px dotted #3c3c3c;
+      }
 
-  &:focus {
-    outline: 0.75px dotted #3c3c3c;
+      &:hover {
+        border: 0.75px solid $color-darkgray;
+      }
+      
+      &.active {
+        border: 0.75px solid $color-darkgray;
+      } 
+    
+    }
+
+    .whowehelp__button + .whowehelp__button {
+      margin-left: 80px;
+    }
+
   }
 
-}
+  .whowehelp__text {
+    width: 640px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+  }
 
-.whowehelp__button:hover {
-  border: 0.75px solid $color-darkgray;
-}
+  .whowehelp__table {
+    width: 1350px;
+    border-collapse: collapse;
 
-.whowehelp__button.active {
-  border: 0.75px solid $color-darkgray;
-}
+    td {
+      border-bottom: 1px solid $color-darkgray;
+      font-size: 18px;
+      font-weight: 300;
+      height: 100px;
 
-.whowehelp__button + .whowehelp__button {
-  margin-left: 80px;
-}
+      span {
+        font-size: 26px;
+      }
 
-.whowehelp__text {
-  width: 640px;
-  text-align: center;
-  font-size: 22px;
-  line-height: 1.5em;
-  margin-bottom: 50px;
-}
+    }
 
-.whowehelp__table {
-  width: 1350px;
-  border-collapse: collapse;
-}
+    tr:last-child td {
+      border-bottom: none;
+    }
 
-.whowehelp__table td {
-  border-bottom: 1px solid $color-darkgray;
-  font-size: 18px;
-  font-weight: 300;
-  height: 100px;
-}
+    tr td:last-child {
+      text-align: end;
+      padding-right: 20px;
+    }
 
-.whowehelp__table tr:last-child td {
-  border-bottom: none;
-}
+  }
 
-.whowehelp__table td span {
-  font-size: 26px;
-}
-
-.whowehelp__table tr td:last-child {
-  text-align: end;
-  padding-right: 20px;
 }
