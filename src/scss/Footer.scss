@@ -8,18 +8,19 @@
   justify-content: center;
   align-items: center;
   position: relative;
-}
 
-.footer__copyright {
-  font-size: 18px;
-}
+  .footer__copyright {
+    font-size: 18px;
+  }
 
-.footer__socials {
-  height: 100%;
-  width: 80px;
-  position: absolute;
-  right: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .footer__socials {
+    height: 100%;
+    width: 80px;
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 }
