@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../scss/FormStep2.scss';
 
-const FormStep2 = () => {
+const FormStep2 = ({stepTwoState}) => {
+
+  const [option, setOption] = useState(0);
+
+  const handleOption = (e) => {
+    setOption(e.currentTarget.value);
+  }
+
+  useEffect(() => {
+    stepTwoState(option)
+  }, [option, stepTwoState])
+
   return (
     <>
       <div className="form__counter">Krok 2/4</div>
@@ -9,13 +20,13 @@ const FormStep2 = () => {
       <form className="form__fields">
         <span className="form__text">Liczba 60l worków:</span>
         <div className="form__amount">
-          <select>
-            <option value="0">- wybierz -</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+          <select value={option} onChange={handleOption}>
+            <option>- wybierz -</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
           </select>
         </div>
       </form>
