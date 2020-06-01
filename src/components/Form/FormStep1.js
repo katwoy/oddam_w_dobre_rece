@@ -1,7 +1,12 @@
 import React from 'react';
 import '../../scss/FormStep1.scss';
 
-const FormStep1 = () => {
+const FormStep1 = ({stepOneState}) => {
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    stepOneState(e.currentTarget.value)
+  }
 
   return (
     <>
@@ -10,27 +15,27 @@ const FormStep1 = () => {
       <form className="form__fields">
         <div className="form__what">
           <label>
-            <input type="checkbox" name="what" value="goodclothes"></input>
+            <input type="checkbox" name="what" value="ubrania w dobrym stanie" onClick={(e) => handleClick(e)}></input>
             ubrania w dobrym stanie
           </label>
           <br/>
           <label>
-            <input type="checkbox" name="what" value="badclothes"></input>
+            <input type="checkbox" name="what" value="ubrania do wyrzucenia"></input>
             ubrania do wyrzucenia
           </label>
           <br/>
           <label>
-            <input type="checkbox" name="what" value="toys"></input>
+            <input type="checkbox" name="what" value="zabawki"></input>
             zabawki
           </label>
           <br/>
           <label>
-            <input type="checkbox" name="what" value="books"></input>
+            <input type="checkbox" name="what" value="książki"></input>
             książki
           </label>
           <br/>
           <label>
-            <input type="checkbox" name="what" value="other"></input>
+            <input type="checkbox" name="what" value="inne"></input>
             inne
           </label>
         </div>

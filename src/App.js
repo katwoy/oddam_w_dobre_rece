@@ -16,6 +16,9 @@ import {
 // import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 const App = () => {
+
+  // const [loggedIn, setLoggedIn] = useState(false);
+
   return (
     <div className="app__container">
       <HashRouter>

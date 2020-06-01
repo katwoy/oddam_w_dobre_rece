@@ -14,9 +14,15 @@ import FormButtonSubmit from './FormButtonSubmit';
 const FormSteps = () => {
 
   const [step, setStep] = useState(1);
+  const [what, setWhat] = useState("xyz");
+  const [amount, setAmount] = useState(0);
+  const [city, setCity] = useState("");
 
   const nextPage = (stepNumber) => setStep(stepNumber);
   const prevPage = (stepNumber) => setStep(stepNumber);
+  const stepOneState = (stepOneWhat) => setWhat(stepOneWhat);
+  const stepTwoState = (stepTwoAmount) => setAmount(stepTwoAmount);
+  const stepThreeState = (stepThreeCity) => setCity(stepThreeCity);
 
   return (
     <>
@@ -27,11 +33,11 @@ const FormSteps = () => {
       {step === 5 && <FormInfo info={"Sprawdź, czy wszystko się zgadza."} />}
       {step === 6 && <FormInfo info={"Twój formularz został wysłany."} />}
       <section className="form__steps">
-        {step===1 && <FormStep1 />}
-        {step===2 && <FormStep2 />}
-        {step===3 && <FormStep3 />}
+        {step===1 && <FormStep1 stepOneState={stepOneState} />}
+        {step===2 && <FormStep2 stepTwoState={stepTwoState} />}
+        {step===3 && <FormStep3 stepThreeState={stepThreeState} />}
         {step===4 && <FormStep4 />}
-        {step===5 && <FormSummary />}
+        {step===5 && <FormSummary what={what} amount={amount} city={city} />}
         {step===6 && <FormThanks />}
         <div className="form__buttons">
           {step !== 1 && step !== 6 && <FormButtonPrev prevPage={prevPage} step={step} />}
