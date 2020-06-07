@@ -34,8 +34,8 @@ const FormSteps = () => {
       {step === 6 && <FormInfo info={"Twój formularz został wysłany."} />}
       <section className="form__steps">
         {step===1 && <FormStep1 stepOneState={stepOneState} />}
-        {step===2 && <FormStep2 stepTwoState={stepTwoState} />}
-        {step===3 && <FormStep3 stepThreeState={stepThreeState} />}
+        {step===2 && <FormStep2 stepTwoState={stepTwoState} amount={amount} />}
+        {step===3 && <FormStep3 stepThreeState={stepThreeState} city={city} />}
         {step===4 && <FormStep4 />}
         {step===5 && <FormSummary what={what} amount={amount} city={city} />}
         {step===6 && <FormThanks />}

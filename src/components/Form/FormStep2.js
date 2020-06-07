@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import '../../scss/FormStep2.scss';
 
-const FormStep2 = ({stepTwoState}) => {
+const FormStep2 = ({stepTwoState, amount}) => {
 
-  const [option, setOption] = useState(0);
+  const [bags, setBags] = useState(amount);
 
-  const handleOption = (e) => {
-    setOption(e.currentTarget.value);
+  const handleBags = (e) => {
+    setBags(e.currentTarget.value);
   }
 
   useEffect(() => {
-    stepTwoState(option)
-  }, [option, stepTwoState])
+    stepTwoState(bags)
+  }, [bags, stepTwoState])
 
   return (
     <>
@@ -20,7 +20,7 @@ const FormStep2 = ({stepTwoState}) => {
       <form className="form__fields">
         <span className="form__text">Liczba 60l worków:</span>
         <div className="form__amount">
-          <select value={option} onChange={handleOption}>
+          <select value={bags} onChange={handleBags}>
             <option>- wybierz -</option>
             <option>1</option>
             <option>2</option>

@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import '../../scss/FormStep3.scss';
 
-const FormStep3 = ({stepThreeState}) => {
+const FormStep3 = ({stepThreeState, city}) => {
 
-  const [option, setOption] = useState(0);
+  const [option, setOption] = useState(city);
 
   const handleOption = (e) => {
     setOption(e.currentTarget.value);
