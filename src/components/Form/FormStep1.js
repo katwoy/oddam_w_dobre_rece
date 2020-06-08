@@ -3,8 +3,7 @@ import '../../scss/FormStep1.scss';
 
 const FormStep1 = ({stepOneState}) => {
 
-  const handleClick = (e) => {
-    e.preventDefault();
+  const handleChange = (e) => {
     stepOneState(e.currentTarget.value)
   }
 
@@ -15,27 +14,27 @@ const FormStep1 = ({stepOneState}) => {
       <form className="form__fields">
         <div className="form__what">
           <label>
-            <input type="checkbox" name="what" value="ubrania w dobrym stanie" onClick={(e) => handleClick(e)}></input>
+            <input type="radio" name="what" value="ubrania w dobrym stanie" onChange={(e) => handleChange(e)}></input>
             ubrania w dobrym stanie
           </label>
           <br/>
           <label>
-            <input type="checkbox" name="what" value="ubrania do wyrzucenia"></input>
+            <input type="radio" name="what" value="ubrania do wyrzucenia" onChange={(e) => handleChange(e)}></input>
             ubrania do wyrzucenia
           </label>
           <br/>
           <label>
-            <input type="checkbox" name="what" value="zabawki"></input>
+            <input type="radio" name="what" value="zabawki" onChange={(e) => handleChange(e)}></input>
             zabawki
           </label>
           <br/>
           <label>
-            <input type="checkbox" name="what" value="książki"></input>
+            <input type="radio" name="what" value="książki" onChange={(e) => handleChange(e)}></input>
             książki
           </label>
           <br/>
           <label>
-            <input type="checkbox" name="what" value="inne"></input>
+            <input type="radio" name="what" value="inne" onChange={(e) => handleChange(e)}></input>
             inne
           </label>
         </div>
