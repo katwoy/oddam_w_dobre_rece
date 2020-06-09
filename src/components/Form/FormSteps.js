@@ -14,7 +14,7 @@ import FormButtonSubmit from './FormButtonSubmit';
 const FormSteps = () => {
 
   const [step, setStep] = useState(1);
-  const [what, setWhat] = useState("xyz");
+  const [what, setWhat] = useState("");
   const [amount, setAmount] = useState(0);
   const [city, setCity] = useState("");
 
@@ -33,7 +33,7 @@ const FormSteps = () => {
       {step === 5 && <FormInfo info={"Sprawdź, czy wszystko się zgadza."} />}
       {step === 6 && <FormInfo info={"Twój formularz został wysłany."} />}
       <section className="form__steps">
-        {step===1 && <FormStep1 stepOneState={stepOneState} />}
+        {step===1 && <FormStep1 stepOneState={stepOneState} what={what} />}
         {step===2 && <FormStep2 stepTwoState={stepTwoState} amount={amount} />}
         {step===3 && <FormStep3 stepThreeState={stepThreeState} city={city} />}
         {step===4 && <FormStep4 />}
