@@ -3,7 +3,7 @@ import '../../scss/FormSummary.scss';
 import shirt from '../../assets/Icon-1.svg';
 import arrows from '../../assets/Icon-4.svg';
 
-const FormSummary = ({what, amount, city}) => {
+const FormSummary = ({what, amount, city, who}) => {
   return (
     <>
       <h3 className="form__title">Podsumowanie Twojej darowizny</h3>
@@ -11,7 +11,7 @@ const FormSummary = ({what, amount, city}) => {
         <h4>Oddajesz:</h4>
         <div className="summary__item">
           <img src={shirt} alt="shirt" className="summary__image"/>
-          <p className="summary__text">{what}, liczba worków: {amount}</p>
+          <p className="summary__text">{what}, liczba worków: {amount}, rzeczy przeznaczone dla {who}</p>
         </div>
         <div className="summary__item">
           <img src={arrows} alt="arrows" className="summary__image"/>

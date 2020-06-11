@@ -17,12 +17,16 @@ const FormSteps = () => {
   const [what, setWhat] = useState("");
   const [amount, setAmount] = useState(0);
   const [city, setCity] = useState("");
+  const [who,setWho] = useState("");
 
   const nextPage = (stepNumber) => setStep(stepNumber);
   const prevPage = (stepNumber) => setStep(stepNumber);
   const stepOneState = (stepOneWhat) => setWhat(stepOneWhat);
   const stepTwoState = (stepTwoAmount) => setAmount(stepTwoAmount);
-  const stepThreeState = (stepThreeCity) => setCity(stepThreeCity);
+  const stepThreeState = (stepThreeCity, stepThreeWho) => {
+    setCity(stepThreeCity);
+    setWho(stepThreeWho)
+  }
 
   return (
     <>
@@ -35,9 +39,9 @@ const FormSteps = () => {
       <section className="form__steps">
         {step===1 && <FormStep1 stepOneState={stepOneState} what={what} />}
         {step===2 && <FormStep2 stepTwoState={stepTwoState} amount={amount} />}
-        {step===3 && <FormStep3 stepThreeState={stepThreeState} city={city} />}
+        {step===3 && <FormStep3 stepThreeState={stepThreeState} city={city} who={who} />}
         {step===4 && <FormStep4 />}
-        {step===5 && <FormSummary what={what} amount={amount} city={city} />}
+        {step===5 && <FormSummary what={what} amount={amount} city={city} who={who} />}
         {step===6 && <FormThanks />}
         <div className="form__buttons">
           {step !== 1 && step !== 6 && <FormButtonPrev prevPage={prevPage} step={step} />}

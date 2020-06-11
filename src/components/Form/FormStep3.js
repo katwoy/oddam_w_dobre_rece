@@ -1,17 +1,22 @@
 import React, {useState, useEffect} from 'react';
 import '../../scss/FormStep3.scss';
 
-const FormStep3 = ({stepThreeState, city}) => {
+const FormStep3 = ({stepThreeState, city, who}) => {
 
   const [option, setOption] = useState(city);
+  const [helpGroup, setHelpGroup] = useState(who);
 
   const handleOption = (e) => {
     setOption(e.currentTarget.value);
   }
 
+  const handleChange = (e) => {
+    setHelpGroup(e.currentTarget.value)
+  }
+
   useEffect(() => {
-    stepThreeState(option)
-  }, [option, stepThreeState])
+    stepThreeState(option, helpGroup)
+  }, [option, helpGroup, stepThreeState])
 
   return (
     <>
@@ -31,23 +36,23 @@ const FormStep3 = ({stepThreeState, city}) => {
         <h4 className="form__subtitle">Komu chcesz pomóc?</h4>
         <div className="form__who">
           <label>
-            <input type="checkbox" name="who" value="children"></input>
+            <input type="radio" name="who" value="dzieci" onChange={(e) => handleChange(e)} checked={who === "dzieci"}></input>
             <span>dzieciom</span>
           </label>
           <label>
-            <input type="checkbox" name="who" value="singlemothers"></input>
+            <input type="radio" name="who" value="samotnych matek" onChange={(e) => handleChange(e)} checked={who === "samotnych matek"}></input>
             <span>samotnym matkom</span>
           </label>
           <label>
-            <input type="checkbox" name="who" value="homeless"></input>
+            <input type="radio" name="who" value="bezdomnych" onChange={(e) => handleChange(e)} checked={who === "bezdomnych"}></input>
             <span>bezdomnym</span>
           </label>
           <label>
-            <input type="checkbox" name="who" value="disabled"></input>
+            <input type="radio" name="who" value="niepełnosprawnych" onChange={(e) => handleChange(e)} checked={who === "niepełnosprawnych"}></input>
             <span>niepełnosprawnym</span>
           </label>
           <label>
-            <input type="checkbox" name="who" value="elderly"></input>
+            <input type="radio" name="who" value="osób starszych" onChange={(e) => handleChange(e)} checked={who === "osób starszych"}></input>
             <span>osobom starszym</span>
           </label>
         </div>
