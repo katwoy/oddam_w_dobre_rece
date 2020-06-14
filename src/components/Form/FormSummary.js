@@ -11,7 +11,7 @@ const FormSummary = ({what, amount, city, who}) => {
         <h4>Oddajesz:</h4>
         <div className="summary__item">
           <img src={shirt} alt="shirt" className="summary__image"/>
-          <p className="summary__text">{what}, liczba worków: {amount}, rzeczy przeznaczone dla {who}</p>
+          <p className="summary__text">{what}, liczba worków: {amount}, przeznaczone dla {who}</p>
         </div>
         <div className="summary__item">
           <img src={arrows} alt="arrows" className="summary__image"/>

@@ -13,6 +13,7 @@ const FormStep2 = ({stepTwoState, amount}) => {
     stepTwoState(bags)
   }, [bags, stepTwoState])
 
+
   return (
     <>
       <div className="form__counter">Krok 2/4</div>
@@ -20,8 +21,8 @@ const FormStep2 = ({stepTwoState, amount}) => {
       <form className="form__fields">
         <span className="form__text">Liczba 60l worków:</span>
         <div className="form__amount">
-          <select value={bags} onChange={handleBags}>
-            <option>- wybierz -</option>
+          <select value={bags} onChange={handleBags} required>
+            <option hidden>- wybierz -</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>

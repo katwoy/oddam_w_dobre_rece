@@ -25,7 +25,7 @@ const FormStep3 = ({stepThreeState, city, who}) => {
       <form className="form__fields">
         <div className="form__city">
           <select value={option} onChange={handleOption}>
-            <option>- wybierz -</option>
+            <option hidden>- wybierz -</option>
             <option>Poznań</option>
             <option>Warszawa</option>
             <option>Kraków</option>
