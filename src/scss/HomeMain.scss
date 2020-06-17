@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     .main__title {
       font-size: 36px;
@@ -49,32 +50,25 @@
 
     }
 
-    .main__buttons {
+    .main__button {
+      margin-top: 80px;
+      background-color: transparent;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 300;
+      font-size: 36px;
+      color: $color-darkgray;
+      width: 400px;
+      height: 120px;
+      border: 0.75px solid $color-darkgray;
+      cursor: pointer;
+      text-decoration: none;
       display: flex;
       justify-content: center;
-      margin-top: 80px;
+      align-items: center;
 
-      .main__button {
-        border: none;
-        background-color: transparent;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 300;
-        font-size: 36px;
-        color: $color-darkgray;
-        width: 300px;
-        height: 120px;
-        border: 0.75px solid $color-darkgray;
-        cursor: pointer;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        &:first-child {
-          margin-right: 45px;
-        }
-
+      &:hover {
+        font-weight: 400;
       }
 
     }
