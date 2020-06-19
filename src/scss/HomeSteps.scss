@@ -65,13 +65,20 @@
     text-align: center;
     font-weight: 300;
     font-size: 36px;
-    width: 300px;
+    width: 400px;
     height: 120px;
     border: 0.75px solid $color-darkgray;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+
+    &:hover {
+      font-weight: 400;
+      border-width: 1.5px;
+    }
+
   }
 
 }
