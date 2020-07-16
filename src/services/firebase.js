@@ -13,4 +13,10 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+const fbProvider = new firebase.auth.FacebookAuthProvider();
+
+export const fbAuth = () => {
+  firebase.auth().signInWithRedirect(fbProvider);
+}
+
 export const auth = firebase.auth;
