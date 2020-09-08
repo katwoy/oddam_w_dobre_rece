@@ -6,10 +6,6 @@ import '../scss/Header.scss';
 const HomeHeader = () => {
   return (
     <header className="header">
-      <div className="header__buttons">
-        <Link to="/logowanie" className="header__button">Zaloguj</Link>
-        <Link to="/rejestracja" className="header__button">Załóż konto</Link>
-      </div>
       <nav className="header__nav">
         <ul className="header__list">
           <li className="header__li"><a href="/">Start</a></li>

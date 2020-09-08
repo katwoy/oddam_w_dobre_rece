@@ -11,7 +11,7 @@ const HomeMain = () => {
       </div>
       <div className="main__content">
         <h1 className="main__title">Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</h1>
-        <Link to="/logowanie" className="main__button">Oddaj rzeczy</Link>
+        <Link to="/oddaj-rzeczy" className="main__button">Oddaj rzeczy</Link>
       </div>
     </main>
   )

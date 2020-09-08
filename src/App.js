@@ -23,9 +23,6 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/logowanie' component={Login} />
-          <Route path='/rejestracja' component={Register} />
-          <Route path='/wylogowano' component={Logout} />
           <Route path='/oddaj-rzeczy' component={Form} />
         </Switch>
         <Footer />

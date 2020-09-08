@@ -33,7 +33,7 @@ const HomeSteps = ({id}) => {
           <p className="steps__text">kurier przyjedzie w dogodnym terminie</p>
         </div>
       </div>
-      <Link to="/logowanie" className="steps__button">Oddaj rzeczy</Link>
+      <Link to="/oddaj-rzeczy" className="steps__button">Oddaj rzeczy</Link>
     </section>
   )
 }
