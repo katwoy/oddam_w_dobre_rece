@@ -3,9 +3,6 @@ import './scss/App.scss';
 import Header from './components/Header';
 import Home from './components/Home/Home';
 import Footer from './components/Footer';
-import Login from './components/Login';
-import Register from './components/Register';
-import Logout from './components/Logout';
 import Form from './components/Form/Form';
 import {
   HashRouter,
