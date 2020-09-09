@@ -7,3 +7,8 @@ The purpose of this website is to help people who have things at home that they 
 Under construction
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+To run the app in the development mode - use `yarn start` in the project directory.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+To see the live version, please visit [https://katwoy.github.io/oddam_w_dobre_rece/#/](https://katwoy.github.io/oddam_w_dobre_rece/#/).
