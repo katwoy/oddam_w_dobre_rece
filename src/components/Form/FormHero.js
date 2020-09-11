@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '../../scss/FormHero.scss';
 import formHero from '../../assets/Form-Hero-Image.jpg';
 
@@ -9,6 +10,7 @@ const FormHero = () => {
         <img src={formHero} alt="green sweater"/>
       </div> 
       <div className="hero__description">
+        <Link to='/' className="back-to-start">&#8672; Wróć na stronę startową</Link>
         <h1 className="hero__title">Oddaj rzeczy, których już nie chcesz<br/><span>potrzebującym</span></h1>
         <div className="hero__subtitle">Wystarczą 4 proste kroki:</div>
         <div className="hero__steps">

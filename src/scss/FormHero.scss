@@ -24,6 +24,18 @@
     justify-content: center;
     align-items: center;
 
+    .back-to-start {
+      text-decoration: none;
+      color: $color-lightgray;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 30px;
+      font-size: 14px;
+      width: 100%;
+      text-align: right;
+      padding-right: 150px;
+    }
+
     .hero__title {
       font-size: 36px;
       line-height: 1.5em;
