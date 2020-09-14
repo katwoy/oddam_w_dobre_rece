@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import '../../scss/HomeSteps.scss';
 import shirt from '../../assets/Icon-1.svg';
 import bag from '../../assets/Icon-2.svg';
@@ -33,7 +32,6 @@ const HomeSteps = ({id}) => {
           <p className="steps__text">kurier przyjedzie w dogodnym terminie</p>
         </div>
       </div>
-      <Link to="/oddaj-rzeczy" className="steps__button">Oddaj rzeczy</Link>
     </section>
   )
 }
